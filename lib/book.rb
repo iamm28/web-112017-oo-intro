@@ -46,7 +46,14 @@ class Book
   end
 
   def self.all
-
+    @@all << "<Book @title= #{self.formatted_title}>"
   end
 
 end
+
+
+book1 = Book.new("the title", ["Array Of", "Authors Names"],"a nice story")
+book2 = Book.new("the goose", ["Jame Laf", "John Smith"], "a bad story")
+
+puts Book.all
+puts Book.all.length

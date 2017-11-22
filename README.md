@@ -1,4 +1,4 @@
-```
+
 Define a class method called `all`
 Book.new(..)
 Book.new(..)
@@ -9,4 +9,3 @@ Book.all
 Book.new
 Book.all.length
 => 3
-```
