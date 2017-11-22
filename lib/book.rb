@@ -13,6 +13,7 @@ class Book
     @title = title
     @authors = authors
     @description = description
+    @@all << self
     # here is where that code should go
   end
 
@@ -46,7 +47,9 @@ class Book
   end
 
   def self.all
-    @@all << "<Book @title= #{self.formatted_title}>"
+    @@all.each do |book| #{}"<Book @title= #{self.formatted_title}>"
+      puts book.formatted_title
+    end 
   end
 
 end
